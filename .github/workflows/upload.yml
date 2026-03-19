@@ -6,6 +6,10 @@ on:
   #   branches:
   #     - main           # push 自动触发（可选）
 
+  env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ✅ 强制用 Node 24
+
+
 jobs:
   upload:
     runs-on: macos-latest # ⚠️ 必须 macOS
