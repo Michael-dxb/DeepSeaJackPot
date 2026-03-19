@@ -1,14 +1,14 @@
 name: Upload IPA to App Store
 
 on:
-  workflow_dispatch:   # 手动触发
-  push:
-    branches:
-      - main           # push 自动触发（可选）
+  workflow_dispatch: # 手动触发
+  # push:
+  #   branches:
+  #     - main           # push 自动触发（可选）
 
 jobs:
   upload:
-    runs-on: macos-latest   # ⚠️ 必须 macOS
+    runs-on: macos-latest # ⚠️ 必须 macOS
 
     steps:
       - name: Checkout
@@ -17,7 +17,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: "3.1"
 
       - name: Install fastlane
         run: gem install fastlane -NV

@@ -10,7 +10,7 @@ platform :ios do
     )
 
     upload_to_app_store(
-      ipa: "./app.ipa",
+      ipa: "./DeepSeaJackPotProject.ipa",
       api_key: api_key,
       skip_metadata: true,
       skip_screenshots: true,
