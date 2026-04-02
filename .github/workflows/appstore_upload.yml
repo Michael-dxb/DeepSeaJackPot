@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -36,4 +36,5 @@ jobs:
             --ipa "$IPA_PATH" \
             --skip_screenshots \
             --skip_metadata \
+            --precheck_include_in_app_purchases false \
             --force
